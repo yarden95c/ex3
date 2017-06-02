@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="loginStyle.css" />
+        <meta charset="utf-8" />
+        <title>Login</title>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Log in</h1>
+            <p>Use a local account to log in.</p> 
+        </div>
+
+
+        <div id="form">
+            <form action="MyFormServlet" method="post">
+                <div id="user">Username:</div>
+                <input type="text" name="username" id="username" />
+                <div id="pass">Password:</div>
+                <input type="password" name="password" id="password" />
+                <div></div>
+                <input type="submit" value="Login" />
+            </form>
+        </div>
+
+        <div id="signup">
+            <a href="SignUp.html">Register as a new user</a>
+        </div>
+
+
+    </body>
+</html>
