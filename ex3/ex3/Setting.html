@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="loginStyle.css" />
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="MenuStyle.css" rel="stylesheet" />
+    <script src="jquery-3.2.1.js"></script>
+    <meta charset="utf-8" />
+    <title>Setting</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="panel-body">
+                <form method="POST" action="#" role="form" class="form-signin">
+                    <div>
+                        <h3 class="form-signin-heading">Setting</h3>
+                        <hr class="colorgraph"><br>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="settingName">Name</label>
+                        <input id="settingName" type="text" maxlength="50" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="settingRows">Rows</label>
+                        <input id="settingRows" type="text" required="" maxlength="50" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="settingCols">Cols</label>
+                        <input id="settingCols" type="text" required="" maxlength="25" class="form-control" length="40">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="settingAlgo">Search Algo</label>
+                        <select id="settingAlgo">
+                            <option value="BFS">BFS</option>
+                            <option value="DFS">DFS</option>
+                        </select>
+                    </div>
+
+                    <div style="width:300px;">
+                        <div style="float: left; width: 140px">
+                            <form id="settingOk" action="post_nrs_users.asp" method="post">
+                                <input type="submit" name="" class="btn btn-info btn-block" value="OK">
+                            </form>
+                        </div>
+                        <div style="float: right; width: 150px">
+                            <form id="settingCancel" action="post_nrs_users.asp" method="post">
+                                <input type="submit" name=""  class="btn btn-info btn-block" value="Cancel">
+                            </form>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+
