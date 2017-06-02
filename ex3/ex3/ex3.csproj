@@ -95,6 +95,8 @@
   <ItemGroup>
     <Content Include="jquery-3.2.1.js" />
     <Content Include="MyPage.html" />
+    <Content Include="SinglePlayer.html" />
+    <Content Include="SinglePlayer.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
