@@ -8,29 +8,56 @@
     <script src="jquery-3.2.1.js"></script>
 </head>
 <body>
-    <nav>
-    </nav>
-    <canvas id="mazeCanvas" width="300" height="300" style="border:2px black solid"></canvas>
-    <script>
-        maze = [[0, 1, 0],[0, 1, 0],[0, 0, 0]];
-        drawMaze(maze);
-    </script>
+    <div class="container">
+    </div>
+    <nav></nav>
     <div class="container body-content">
         <h2>Single Player Game</h2><hr />
-        <div class="col-sm-4 form-horizontal">
-            <div class="form-group">
-                <label for="mazeName" class="col-sm-2 control-label">Name</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="mazeName" />
+        <div class="col-sm-12 text-center">
+            <canvas id="mazeCanvas" width="450" height="450" style="border:2px black solid"></canvas>
+            <div class="col-sm-4 form-horizontal">
+                <div class="form-group">
+                    <label for="mazeName" class="col-sm-2 control-label">Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="mazeName" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="rows" class="col-sm-2 control-label">rows</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="rows" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="cols" class="col-sm-2 control-label">cols</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="cols" />
+                    </div>
+                </div>
+                <div>
+                    <button >Start New Game</button>
+                </div>
+                <div class="row">
+                    <br />
+                    <label for="searchAlgo" class="col-sm-2 control-label">Search Algo</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" id="searchAlgoeithm">
+                            <option value="bfs">BFS</option>
+                            <option value="dfs">DFS</option>
+                        </select>
+                        <br />
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <button>Solve Game</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-8 text-center">
-            <canvas id="mazeCanvas" tabindex="1" class="maze-board" width="500"
-                    height="500"></canvas>
         </div>
     </div>
     <script src="SinglePlayer.js"></script>
 
 </body>
+
 </html>

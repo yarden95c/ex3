@@ -1,6 +1,9 @@
 ﻿$("nav").load("Menu.html");
-function drawMaze(maze) {
+function drawMaze() {
+    maze = [[0, 1, 0, 0, 1], [1, 1, 0, 1, 0], [0, 1, 0, 1, 1], [1, 0, 0, 0, 0],[1, 1, 0, 1, 0],];
     var myCanvas = document.getElementById("mazeCanvas");
+    myCanvas.style.cssFloat = "right";
+    myCanvas.style.marginBottom = "50px"
     var context = mazeCanvas.getContext("2d");
     var rows = maze.length;
     var cols = maze[0].length;
@@ -14,4 +17,7 @@ function drawMaze(maze) {
             }
         }
     }
+    return myCanvas;
 }
+this.drawMaze();
+document.getElementById("searchAlgoeithm").style.display = "inline - block";
